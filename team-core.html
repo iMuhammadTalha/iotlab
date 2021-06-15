@@ -37,25 +37,42 @@
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
         </div>
     <![endif]-->
-
     <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
+        .dropbtn {
+          background-color: white;
+          color: #777777;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
         }
         
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
+        .dropdown {
+          position: relative;
+          display: inline-block;
         }
         
-        tr:nth-child(even) {
-          background-color: #dddddd;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
         }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #004879;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #004879;}
     </style>
-
 </head>
 <body>
     
@@ -89,14 +106,14 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-6">
                             <div class="logo">
-                                <h1><a href="#" title="Dreri">Internet of Things Lab</a></h1>
+                                <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1>
                             </div> <!-- /.logo -->
                         </div> <!-- /.col-md-4 -->
                         <div class="col-md-8 col-sm-8 col-xs-6">
                             <div class="menu text-right hidden-sm hidden-xs">
         
                                 <ul>
-                                    <li><a href="#Home">Home</a></li>
+                                    <li><a onclick="location.href='index.html'" href="index.html">Home</a></li>
                                     
                                     <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
                                     
@@ -162,8 +179,9 @@
 
     <div id="about" class="section-cotent">
         <div class="container">
+            <br>
             <div class="title-section text-center">
-                <h2>Honors and Awards</h2>
+                <h2>Our Core Team</h2>
                 <span></span>
             </div> <!-- /.title-section -->
             <div class="row">
@@ -171,115 +189,124 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="images/awards/Dr_ Rafia.webp" alt="NUST">
-                                
+                                <img src="images/team/drRafia.webp" alt="Dr Rafia">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
                             </div>
                             <div class="inner-content">
-                                <h5>Award of Design Patent titled, "MAPTU-Mobile Atmospheric Pollutant Telemetry Unit" by the IPO, Pakistan
-                                </h5>
-                                <span>Year: 2020</span>
+                                <h5>Dr. Rafia Mumtaz</h5>
+                                <span>Lab Director</span>
+                                <p>Dr. Rafia Mumtaz received her Ph.D. in 2010 from the University of Surrey, UK, in the area of Remote Sensing and Satellite image processing. She is currently working as Head of Information Technology and the Director Internet of Things (IoT) Lab, at NUST-SEECS. She is the recipient of several national and international research grants worth PKR 33 million. She has been awarded NUST-SEECS Best Researcher Award in the year 2019.</p>
                             </div>
                         </div> <!-- /.team-member -->
                     </div> <!-- /.col-md-4 -->
+
                     <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/awards/dice.webp" alt="Mary">
-                                
-                            </div>
-                            <div class="inner-content">
-                                <h5>The project titled, Air quality monitoring using IoT won Engineering Category prize (Rs.40K) at DICE-DUHS, Karachi
-                                </h5>
-                                <span>Year: 2019</span>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img height="500px" src="images/bestresearcher.webp" alt="Julia">
-                                
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. Rafia Mumtaz is awarded SEECS Best Researcher Award
-                                </h5>
-                                <span>Year: 2018</span>
-                            
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                </div> <!-- /.our-team -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-
-
-<br>
-
-        <div class="container">
-            <div class="title-section text-center">
-                <h2>Research Grants</h2>
-                <span></span>
-            </div> <!-- /.title-section -->
-            <div class="row">
-                <div class="our-team">
-                    
-                    <table>
-                        <tr>
-                          <th>Funding</th>
-                          <th>Year</th>
-                          <th>Project Title</th>
-                          <th>Funding Source</th>
-                        </tr>
-                        <tr>
-                          <td>€58,881</td>
-                          <td>2020</td>
-                          <td>Capacity Building for Digital Health Monitoring and Care Systems in Asia - DigiHealth-Asia</td>
-                          <td>Erasmus + program</td>
-                        </tr>
-                        <tr>
-                            <td>€78,758</td>
-                            <td>2018-2020</td>
-                            <td>Internet of Things (IoT) enabled surface water pollution detection for predictive healthcare</td>
-                            <td>DAAD Germany</td>
-                        </tr>
-                        <tr>
-                            <td>£19000</td>
-                            <td>2018-2019</td>
-                            <td>GrlSt: Green internet-of-things for climate smart agriculture</td>
-                            <td>GCRG, UK</td>
-                        </tr>
-                        <tr>
-                          <td>PKR 3.61 million</td>
-                          <td>2018-2021</td>
-                          <td>Crop health monitoring and early warning system using Internet of Things (IoT) enabled precision agriculture</td>
-                          <td>HEC-NRPU, Pakistan</td>
-                        </tr>
                         
-                      </table>
+                    </div> <!-- /.col-md-4 -->
 
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/drZaidi.webp" alt="Dr Zaidi">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Dr. S M H Zaidi</h5>
+                                <span>Lab Co-Director and International Engagement Lead</span>
+                                <p>Dr. S M H Zaidi (Senior Member, IEEE) received the Ph.D. degree from the University of South Florida, USA, in 1992. He is currently the former Principal and the Dean of the NUST School of Electrical Engineering and Computer Science (SEECS). He also serves as a Senior Research Faculty at NUST-SEECS. His key research interests include wireless and photonics networks, ultra-high-speed communication systems, network security, and the Internet of Things (IoT). 
+                                    <!-- He was a recipient of several coveted awards including, the Best University Researcher and Teacher and the Presidents' Pride of Performance for his national level meritorious service in IT education and research. Furthermore, he has won international research grants and has more than 100 research publications in reputed journals and conferences. He has also been the pioneer steering committee International Co-Chair of the IEEE sponsored International Conference HONET-ICT, since past 16 years. -->
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+                   
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/drAli.webp" alt="Dr Ali">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Dr. Syed Ali Hassan</h5>
+                                <span>Research Collaborator</span>
+                                <p>Syed Ali Hassan received his PhD in Electrical Engineering from Georgia Institute of Technology, Atlanta USA in 2011.  His broader area of research is signal processing for communications with a focus on cooperative communications for wireless networks, stochastic modeling, estimation and detection theory, and 5G/B5G/6G communications. He is the director of Information Processing and Transmission (IPT) Lab,  http://ipt.seecs.nust.edu.pk/ </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <!-- <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/drHasan.webp" alt="Dr Hasan">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="inner-content">
+                                <h5>Dr. Hasan Ali Khattak</h5>
+                                <span>Research Collaborator</span>
+                                <p>Hasan Ali Khattak received his Ph.D. in Electrical and Computer Engineering degree from Politecnico di Bari, Bari, Italy in 2015. He is currently serving as Associate Professor - School of Electrical Engineering and Computer Science, National University of Sciences and Technology - Pakistan since October 2020. His current research interests focus on Future Internet Architectures such as the Web of Things and leveraging Data Sciences and Social Engineering for Future Smart Cities. He is currently involved in several funded research projects in various domains such as Healthcare Information Management, Semantic Web of Things, and Fog Computing while exploring Ontologies and other Semantic Web Technologies. His perspective research areas are the application of Machine Learning and Data Sciences for improving and enhancing Quality of life in Smart Urban Spaces especially in the Healthcare and Transportation domain through Knowledge management, predictive analysis, and visualization. He is an active Senior Member of IEEE, a professional member of ACM, and a member of societies such as IEEE ComSoc, IEEE VTS, and Internet Society.</p>
+                            </div>
+                        </div>  -->
+                    </div> 
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/drMAli.webp" alt="Dr M ALi">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Dr. Muhammad Ali Tahir</h5>
+                                <span>Research Collaborator</span>
+                                <p>Dr. Muhammad Ali Tahir received his PhD in computer science from RWTH Aachen university, Germany in 2015. During his PhD he worked on several EU funded projects related to speech recognition, aiming to bridge the language divide in a multilingual Europe. After joining SEECS, he is actively engaged with the local industry to develop voice based solutions for voice based navigation, telephone call analytics, and customer support voice chatbots.</p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
                 </div> <!-- /.our-team -->
             </div> <!-- /.row -->
-
-            
         </div> <!-- /.container -->
-
     </div> <!-- /#about -->
-
-    
 
     <div class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <p>Copyright &copy; 2021 Internet of Things Lab (IoT), NUST-SEECS</p>
+                    <p>Copyright &copy; 2021 IoT Lab, NUST-SEECS</p>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <!-- <div class="go-top">
+                    <div class="go-top">
                         <a href="#" id="go-top">
                             <i class="fa fa-angle-up"></i>
                             Back to Top
                         </a>
-                    </div> -->
+                    </div>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

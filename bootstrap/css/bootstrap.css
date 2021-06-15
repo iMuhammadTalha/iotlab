@@ -397,6 +397,15 @@ hr {
 
 p {
   margin: 0 0 10px;
+  /* text-align: justify; */
+}
+
+.inner-content p {
+  text-align: justify;
+}
+
+.col-md-8 p {
+  text-align: justify;
 }
 
 .lead {
@@ -420,7 +429,7 @@ cite {
 }
 
 .text-muted {
-  color: #999999;
+  color: #000;
 }
 
 .text-primary {
@@ -465,7 +474,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
 .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #999999;
+  color: #000;
 }
 
 h1,

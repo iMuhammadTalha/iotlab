@@ -54,6 +54,40 @@
         tr:nth-child(even) {
           background-color: #dddddd;
         }
+        .dropbtn {
+          background-color: white;
+          color: #777777;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #004879;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #004879;}
     </style>
 
 </head>
@@ -89,14 +123,14 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-6">
                             <div class="logo">
-                                <h1><a href="#" title="Dreri">Internet of Things Lab</a></h1>
+                                <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1>
                             </div> <!-- /.logo -->
                         </div> <!-- /.col-md-4 -->
                         <div class="col-md-8 col-sm-8 col-xs-6">
                             <div class="menu text-right hidden-sm hidden-xs">
         
                                 <ul>
-                                    <li><a href="#Home">Home</a></li>
+                                    <li><a onclick="location.href='index.html'" href="index.html">Home</a></li>
                                     
                                     <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
                                     
@@ -162,12 +196,59 @@
 
     <div id="about" class="section-cotent">
         <div class="container">
+            <br>
             <div class="title-section text-center">
                 <h2>Honors and Awards</h2>
                 <span></span>
             </div> <!-- /.title-section -->
             <div class="row">
                 <div class="our-team">
+                    
+                    <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/awards/wow.jpeg" alt="NUST">
+                                
+                            </div>
+                            <div class="inner-content">
+                                <h5>Dr. Rafia Mumtaz won "Women of Wonders Award 2021" for precision agriculture by WoWpk and InspireMill
+                                </h5>
+                                <span>Year: 2021</span>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/awards/latrobeuni.jpg" alt="NUST">
+                                
+                            </div>
+                            <div class="inner-content">
+                                <h5>
+                                    The project titled, Comabating Covid-19 using Internet of Medical Devices won Technology infusion grand challenge and awarded 200 AUD for developing their prototype at La Trobe University, Austria.
+                                </h5>
+                                <span>Year: 2021</span>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/awards/nust.jpg" alt="NUST">
+                                
+                            </div>
+                            <div class="inner-content">
+                                <h5>
+                                    The project titled, Livestock monitoring using Internet of Things won 2 prize in 2021 Hult Prize Food for Good Challenge at NUST H-12.
+                                </h5>
+                                <span>Year: 2021</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-img">
@@ -181,6 +262,9 @@
                             </div>
                         </div> <!-- /.team-member -->
                     </div> <!-- /.col-md-4 -->
+
+                    
+
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-img">
@@ -210,57 +294,6 @@
                     </div> <!-- /.col-md-4 -->
                 </div> <!-- /.our-team -->
             </div> <!-- /.row -->
-        </div> <!-- /.container -->
-
-
-<br>
-
-        <div class="container">
-            <div class="title-section text-center">
-                <h2>Research Grants</h2>
-                <span></span>
-            </div> <!-- /.title-section -->
-            <div class="row">
-                <div class="our-team">
-                    
-                    <table>
-                        <tr>
-                          <th>Funding</th>
-                          <th>Year</th>
-                          <th>Project Title</th>
-                          <th>Funding Source</th>
-                        </tr>
-                        <tr>
-                          <td>€58,881</td>
-                          <td>2020</td>
-                          <td>Capacity Building for Digital Health Monitoring and Care Systems in Asia - DigiHealth-Asia</td>
-                          <td>Erasmus + program</td>
-                        </tr>
-                        <tr>
-                            <td>€78,758</td>
-                            <td>2018-2020</td>
-                            <td>Internet of Things (IoT) enabled surface water pollution detection for predictive healthcare</td>
-                            <td>DAAD Germany</td>
-                        </tr>
-                        <tr>
-                            <td>£19000</td>
-                            <td>2018-2019</td>
-                            <td>GrlSt: Green internet-of-things for climate smart agriculture</td>
-                            <td>GCRG, UK</td>
-                        </tr>
-                        <tr>
-                          <td>PKR 3.61 million</td>
-                          <td>2018-2021</td>
-                          <td>Crop health monitoring and early warning system using Internet of Things (IoT) enabled precision agriculture</td>
-                          <td>HEC-NRPU, Pakistan</td>
-                        </tr>
-                        
-                      </table>
-
-                </div> <!-- /.our-team -->
-            </div> <!-- /.row -->
-
-            
         </div> <!-- /.container -->
 
     </div> <!-- /#about -->

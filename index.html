@@ -25,14 +25,18 @@
     <link rel="stylesheet" href="css/templatemo-misc.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-main.css">
-        
+    
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     
     <!-- JavaScripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/modernizr.js"></script>
-
+    
+    <!-- <script src="js/main.js"></script> -->
+    
     <script> 
         $(function(){
           $("#header").load("header.html"); 
@@ -45,6 +49,44 @@
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
         </div>
     <![endif]-->
+
+    <style>
+        .dropbtn {
+          background-color: white;
+          color: #777777;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #004879;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #004879;}
+        </style>
+
 </head>
 <body>
     
@@ -62,35 +104,52 @@
                         <div class="right-header text-right">
                             <ul class="social-icons">
                                 <li><a href="https://www.linkedin.com/in/rafia-mumtaz-6817b535/" class="fa fa-linkedin"></a></li>
-                                <li><a href="https://scholar.google.com/citations?user=i6qLmkkAAAAJ&hl=en&oi=ao" class="fa fa-google"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-google-plus"></a></li>
+                                <li><a href="https://scholar.google.com/citations?user=i6qLmkkAAAAJ&hl=en&oi=ao" class="fa fa-google-plus"></a></li>
+                                <li><a href="https://twitter.com/RafiaMumtaz4" class="fa fa-twitter"></a></li>
                             </ul>
                         </div> <!-- /.left-header -->
                     </div> <!-- /.col-md-6 -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /.top-header -->
+        
         <div class="main-header">
             <div class="container">
+                
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="logo">
-                            <h1><a href="#" title="Dreri">IoT Lab, NUST</a></h1>
+                            <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1>
                         </div> <!-- /.logo -->
                     </div> <!-- /.col-md-4 -->
                     <div class="col-md-8 col-sm-8 col-xs-6">
                         <div class="menu text-right hidden-sm hidden-xs">
+    
                             <ul>
                                 <li><a href="#Home">Home</a></li>
-                                <li><a onclick="location.href='team.html'" href="team.html">Team</a></li>
-                                <!-- <li><a href="#portfolio">Team</a></li> -->
+                                
+                                <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
+                                
+                                <li class="dropdown">
+                                    <button class="dropbtn">TEAM</button>
+                                    <div class="dropdown-content">
+                                      <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
+                                      <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
+                                    </div>
+                                </li>
+
+                                <!-- <li><a href="#portfolio">TEAM</a></li> -->
                                 <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
                                 <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
-                                <li><a onclick="location.href='achievements.html'" href="achievements.html">Achievement</a></li>
-                                <!-- <li><a href="#portfolio">Collaborations</a></li> -->
-                                <!-- <li><a href="#contact">Contact</a></li> -->
-                                <!-- <li><a href="http://www.facebook.com/templatemo" class="external">External</a></li>  -->
+                                <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
+                                <li class="dropdown">
+                                    <button class="dropbtn">ACHIEVEMENT</button>
+                                    <div class="dropdown-content">
+                                      <a onclick="location.href='achievements-award.html'" href="achievements-award.html">Honor & award</a>
+                                      <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a>
+                                    </div>
+                                </li>
+                                
                             </ul>
                         </div> <!-- /.menu -->
                     </div> <!-- /.col-md-8 -->
@@ -100,11 +159,29 @@
                     <div class="menu">
                         <ul>
                             <li><a href="#Home">Home</a></li>
-                                <li><a onclick="location.href='team.html'" href="team.html">Team</a></li>
-                                <!-- <li><a href="#portfolio">Team</a></li> -->
-                                <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
-                                <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
-                                <li><a onclick="location.href='achievements.html'" href="achievements.html">Achievement</a></li>
+                            
+                            <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
+                            
+                            <li class="dropdown">
+                                <button class="dropbtn">TEAM</button>
+                                <div class="dropdown-content">
+                                  <a onclick="location.href='team-core.html'" href="team-core.html">Core Team</a>
+                                  <a onclick="location.href='team-rd.html'" href="team-rd.html">R & D Team</a>
+                                </div>
+                            </li>
+
+                            <!-- <li><a href="#portfolio">TEAM</a></li> -->
+                            <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
+                            <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
+                            <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
+                            <li class="dropdown">
+                                <button class="dropbtn">ACHIEVEMENT</button>
+                                <div class="dropdown-content">
+                                  <a onclick="location.href='achievements-award.html'" href="achievements-award.html">Honor & award</a>
+                                  <a onclick="location.href='achievements-grant.html'" href="achievements-grant.html">Research grant</a>
+                                </div>
+                            </li>
+                            
                         </ul>
                     </div> <!-- /.menu -->
                 </div> <!-- /.responsive-menu -->
@@ -112,12 +189,10 @@
         </div> <!-- /.header -->
     </div> <!-- /.site-header -->
 
-    
-
     <div class="flexslider">
         <ul class="slides">
             <li>
-                <img src="images/iot.webp" alt="">
+                <img height="440px" src="images/slider/iot.webp" alt="">
                 <div class="flex-caption">
                     <h2></h2>
                     <span></span>
@@ -125,7 +200,7 @@
                 </div>
             </li>
             <li>
-                <img src="images/group.webp" alt="">
+                <img src="images/slider/group.webp" alt="">
                 <div class="flex-caption">
                     <h2></h2>
                     <span></span>
@@ -133,11 +208,149 @@
                 </div>
             </li>
             <li>
-                <img src="images/bestresearcher.webp" alt="">
+                <img src="images/slider/bestresearcher.webp" alt="">
                 <div class="flex-caption">
                     <h2></h2>
                     <span></span>
                     <p>SEECS Best Researcher Award was Conferred to Dr. Rafia Mumtaz in Dec, 2019
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/waterkit.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Water Quality Monitoring IoT Kit
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/waterdam.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Water Quality Monitoring Using IoT at Rawal Lake
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/drone.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>UAV with Specteral Camera
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/arialview.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Arial View
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/master.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Smart Agriculture Master IoT Node
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <img src="images/slider/sensor.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Soil moisture and temperature sensors
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/slave.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Slave Node PCB V3
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/slaves.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Slave Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/master.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>
+                        Master Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/many.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Multiple Slave Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/air.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Indoor Air Quality IoT Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/urban.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Urban Air Quality Monitoring IoT Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/amient.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>Ambient Air Quality IoT Node
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/slider/airnode.webp" alt="">
+                <div class="flex-caption">
+                    <h2></h2>
+                    <span></span>
+                    <p>PCB of Ambient Air Quality IoT Node
                     </p>
                 </div>
             </li>
@@ -158,7 +371,7 @@
                             <i class="fa fa-desktop"></i>
                             <h3>Vision</h3>
                         </div>
-                        <div class="service-description">
+                        <div class="service-description" style="text-align: justify;">
                             Our vision is to provide a platform to aspiring and motivated minds for conducting scientific research to develop smart indigenous solutions to local problems and add value to society while achieving new levels of performance through cutting edge and modern technology.
                         </div>
                     </div> <!-- /.service-item -->
@@ -170,7 +383,7 @@
                             <i class="fa fa-umbrella"></i>
                             <h3>Inception</h3>
                         </div>
-                        <div class="service-description">
+                        <div class="service-description" style="text-align: justify;">
                             The research related to emerging technologies such as Internet of Things (IoT) holds paramount importance across the globe as of today. NUST SEECS has launched a series of IoT events since August 2017, ranging from symposia, basic and advanced workshops to IoT research boot camp. Consequently, a number of smart solutions addressing the local problems have been developed. These research projects have various national and international collaborations. Several local and international delegations visit research outcomes at SEECS. To advance IoT projects and to further extend the research in this domain, this dedicated lab came into being in August 2018.
                         </div>
                     </div> <!-- /.service-item -->
@@ -182,7 +395,7 @@
                             <i class="fa fa-cogs"></i>
                             <h3>Mission</h3>
                         </div>
-                        <div class="service-description">
+                        <div class="service-description" style="text-align: justify;">
                             Our mission is to identify tech-savvy individuals with a strong passion for research and innovation to sustain NUST-SEECS research projects for a longer run and to develop smart projects based on IoT and subsequently advance them to a product level
                         </div>
                     </div> <!-- /.service-item -->
@@ -357,7 +570,7 @@
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, modi, non ducimus nesciunt in commodi similique aliquam omnis ea at!</p> -->
                         <span><i class="fa fa-home"></i>IoT Lab, SEECS, NUST H-12, Islamabad, Pakistan </span>
                         <span><i class="fa fa-phone"></i>051-90852161</span>
-                        <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span>
+                        <!-- <span><i class="fa fa-envelope"></i>rafia.mumtaz@seecs.edu.pk</span> -->
                         <span><i class="fa fa-envelope"></i>iotlab@seecs.edu.pk</span>
                     </div>
                 </div> <!-- /.col-md-3 -->
@@ -369,7 +582,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <p>Copyright &copy; 2021 IoT Lab, NUST-SEECS</p>
+                    <p>Copyright &copy; 2021 Internet of Things Lab (IoT), NUST-SEECS</p>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="go-top">
@@ -410,6 +623,8 @@
 
         window.onload = loadScript;
     </script>
+
+
 
 </body>
 </html>

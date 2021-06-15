@@ -37,6 +37,42 @@
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
         </div>
     <![endif]-->
+    <style>
+        .dropbtn {
+          background-color: white;
+          color: #777777;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #004879;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #004879;}
+    </style>
 </head>
 <body>
     
@@ -70,14 +106,14 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-6">
                             <div class="logo">
-                                <h1><a href="#" title="Dreri">Internet of Things Lab</a></h1>
+                                <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1>
                             </div> <!-- /.logo -->
                         </div> <!-- /.col-md-4 -->
                         <div class="col-md-8 col-sm-8 col-xs-6">
                             <div class="menu text-right hidden-sm hidden-xs">
         
                                 <ul>
-                                    <li><a href="#Home">Home</a></li>
+                                    <li><a onclick="location.href='index.html'" href="index.html">Home</a></li>
                                     
                                     <!-- <li><a onclick="location.href='team.html'" href="team.html">TEAM</a></li> -->
                                     
@@ -141,152 +177,18 @@
         </div> <!-- /.site-header -->
     </div> <!-- /#home -->
 
-    <div id="about" class="section-cotent">
-        <div class="container">
-            <div class="title-section text-center">
-                <h2>Our Core Team</h2>
-                <span></span>
-            </div> <!-- /.title-section -->
-            <div class="row">
-                <div class="our-team">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/drRafia.webp" alt="Dr Rafia">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. Rafia Mumtaz</h5>
-                                <span>Lab Director</span>
-                                <p>Dr. Rafia Mumtaz received her Ph.D. in 2010 from the University of Surrey, UK, in the area of Remote Sensing and Satellite image processing. She is currently working as Head of Information Technology and the Director Internet of Things (IoT) Lab, at NUST-SEECS. She is the recipient of several national and international research grants worth PKR 33 million. She has been awarded NUST-SEECS Best Researcher Award in the year 2019.</p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-
-                    <div class="col-md-4 col-sm-6">
-                        
-                    </div> <!-- /.col-md-4 -->
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/drZaidi.webp" alt="Dr Zaidi">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. S M H Zaidi</h5>
-                                <span>Lab Co-Director and International Engagement Lead</span>
-                                <p>Dr. S M H Zaidi (Senior Member, IEEE) received the Ph.D. degree from the University of South Florida, USA, in 1992. He is currently the former Principal and the Dean of the NUST School of Electrical Engineering and Computer Science (SEECS). He also serves as a Senior Research Faculty at NUST-SEECS. His key research interests include wireless and photonics networks, ultra-high-speed communication systems, network security, and the Internet of Things (IoT). 
-                                    <!-- He was a recipient of several coveted awards including, the Best University Researcher and Teacher and the Presidents' Pride of Performance for his national level meritorious service in IT education and research. Furthermore, he has won international research grants and has more than 100 research publications in reputed journals and conferences. He has also been the pioneer steering committee International Co-Chair of the IEEE sponsored International Conference HONET-ICT, since past 16 years. -->
-                                </p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                   
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/drAli.webp" alt="Dr Ali">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. Syed Ali Hassan</h5>
-                                <span>Research Collaborator</span>
-                                <p>Syed Ali Hassan received his PhD in Electrical Engineering from Georgia Institute of Technology, Atlanta USA in 2011.  His broader area of research is signal processing for communications with a focus on cooperative communications for wireless networks, stochastic modeling, estimation and detection theory, and 5G/B5G/6G communications. He is the director of Information Processing and Transmission (IPT) Lab,  http://ipt.seecs.nust.edu.pk/ </p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/drHasan.webp" alt="Dr Hasan">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. Hasan Ali Khattak</h5>
-                                <span>Research Collaborator</span>
-                                <p>Hasan Ali Khattak received his Ph.D. in Electrical and Computer Engineering degree from Politecnico di Bari, Bari, Italy in 2015. He is currently serving as Associate Professor - School of Electrical Engineering and Computer Science, National University of Sciences and Technology - Pakistan since October 2020. His current research interests focus on Future Internet Architectures such as the Web of Things and leveraging Data Sciences and Social Engineering for Future Smart Cities. He is currently involved in several funded research projects in various domains such as Healthcare Information Management, Semantic Web of Things, and Fog Computing while exploring Ontologies and other Semantic Web Technologies. His perspective research areas are the application of Machine Learning and Data Sciences for improving and enhancing Quality of life in Smart Urban Spaces especially in the Healthcare and Transportation domain through Knowledge management, predictive analysis, and visualization. He is an active Senior Member of IEEE, a professional member of ACM, and a member of societies such as IEEE ComSoc, IEEE VTS, and Internet Society.</p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/drMAli.webp" alt="Dr M ALi">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Dr. Muhammad Ali Tahir</h5>
-                                <span>Research Collaborator</span>
-                                <p>Dr. Muhammad Ali Tahir received his PhD in computer science from RWTH Aachen university, Germany in 2015. During his PhD he worked on several EU funded projects related to speech recognition, aiming to bridge the language divide in a multilingual Europe. After joining SEECS, he is actively engaged with the local industry to develop voice based solutions for voice based navigation, telephone call analytics, and customer support voice chatbots.</p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-                </div> <!-- /.our-team -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /#about -->
 
     <div id="about" class="section-cotent">
         <div class="container">
-            <div class="title-section text-center">
-                <span></span>
+            <br>
+            <div class="title-section text-center"> 
                 <h2>Our R & D Team</h2>
                 <span></span>
             </div> <!-- /.title-section -->
             <div class="row">
                 <div class="our-team">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="images/team/usama.webp" alt="Usama">
-                                <div class="overlay">
-                                    <ul class="social">
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-instagram"></a></li>
-                                    </ul>
-                                </div> <!-- /.overlay -->
-                            </div>
-                            <div class="inner-content">
-                                <h5>Mr. Usama Shujaat</h5>
-                                <span>Embedded System Engineer</span>
-                                <p>Usama Shujaat received his B.E degree in Electrical Engineering from NUST School of Electrical Engineering and Computer Sciences in 2018. He is currently pursuing an M.S degree in Electrical Engineering from SEECS. His research focused on developing the Internet of things solutions for collecting data from different types of sensors and store it in the cloud for further processing. He is more inclined towards hardware development and cloud computing.
-                                    </p>
-                            </div>
-                        </div> <!-- /.team-member -->
-                    </div> <!-- /.col-md-4 -->
-
+                    
+                    <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-img">
@@ -304,12 +206,12 @@
                                 </h5>
                                 <span>AI and Machine Learning Lead
                                 </span>
-                                <p>Uferah Shafi holds a BSc. degree in Mathematics from Bahauddin Zikariya University, Multan, Pakistan and MSc degree in Information Technology from Quaidi- Azam University, Islamabad, Pakistan. She completed her MS in Computer Science from COMSATS Institute of Information Technology, Islamabad, Pakistan. Currently, she is doing PhD from School of Electrical Engineering and Computer Science, NUST, Pakistan, Her key research areas are Deep Learning, Remote Sensing, Image Processing and Internet of Things (IoT).
+                                <p>She is doing PhD from School of Electrical Engineering and Computer Science, NUST, Pakistan. Her key research areas are Deep Learning, Remote Sensing, Image Processing and Internet of Things (IoT).
                                 </p>
                             </div>
                         </div> <!-- /.team-member -->
                     </div> <!-- /.col-md-4 -->
-                   
+
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-img">
@@ -326,11 +228,226 @@
                                 <h5>Mr. Ihsan Ul Haq</h5>
                                 <span>Embedded System Engineer
                                 </span>
-                                <p>Ihsan received his B.E degree in Electrical Engineering from University of Engineering and Technology in 2018. He is currently pursuing an M.S degree in Electrical Engineering from SEECS. His research focused on developing the Machine Learning. He is more inclined towards hardware development and machine learning. </p>
+                                <p>He is currently pursuing the M.Sc. degree in Electrical Engineering with the School of Electrical Engineering and Computer Science (SEECS), NUST, Pakistan and working as a Research Assistant in IoT lab. His key research interests include deep learning, computer vision, embedded systems and the Internet of Things (IoT).</p>
                             </div>
                         </div> <!-- /.team-member -->
                     </div> <!-- /.col-md-4 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/shahbaz.jpeg" alt="Shahbaz">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Shahbaz Baig</h5>
+                                <span>Remote Sesning & GIS Specialist</span>
+                                <p>He is doing PhD from School of Electrical Engineering and Computer Science (SEECS), NUST, Pakistan. His key research areas are related to Remote Sensing and GIS. Main research interest is Forest Biomass estimation, Agriculture, Oceanogography, water resource and AI.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+
+                </div>
+
+                <div class="row">
+
+                
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/usama.webp" alt="Usama">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Usama Shujaat</h5>
+                                <span>Cloud Engineer</span>
+                                <p>He is working as a Cloud Engineer at IOT Lab. His experience lies in developing state of the art AWS architectures for IoT projects, cloud administration, cloud monitoring and implementing DevOps technologies to improve cost and scalability.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img width="500" height="600" src="images/team/talha.jpeg" alt="Talha">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Muhammad Talha
+                                </h5>
+                                <span>Full Stack Engineer
+                                </span>
+                                <p>He is currently pursuing the M.Sc. degree in Information Technology with the School of Electrical Engineering and Computer Science (SEECS), NUST, Pakistan and working as a Research Assistant in IoT lab. He has industry experience of Full Stack Developer of 1.5 year. His key research interests include machine learning, cloud computing and IoT. 
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
                     
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/hasan.jpeg" alt="Ihsan">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Muhammad Hassan Maqsood</h5>
+                                <span>Machine Learning and Image Processing
+                                </span>
+                                <p>He is currently pursuing the M.Sc. degree in Electrical Engineering with the School of Electrical Engineering and Computer Science (SEECS), NUST, Pakistan and working as a Research Assistant in IoT lab. His key research interests include machine learning and Image Processing.
+
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/hassan.jpeg" alt="Ihsan">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Hassan Raza Bukhari </h5>
+                                <span>Machine Learning and Data Engineer
+                                </span>
+                                <p>Certified Machine Learning Engineer, highly passionate about data. I love to combine various areas of computing to build interesting solutions.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/rafay.jpg" alt="Abdul Rafeh">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Abdur Rafay</h5>
+                                <span>Embedded System Engineer
+                                </span>
+                                <p>Embedded System.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/zarlish.jpg" alt="zarlish">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Ms. Zarlish Ashfaq</h5>
+                                <span>Machine Learning and Data Analsist
+                                </span>
+                                <p>Machine Learning Engineer.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="images/team/aziz.png" alt="Aziz">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Abdul Aziz </h5>
+                                <span>Embedded System Engineer
+                                </span>
+                                <p>Embedded System Engineer
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img width="500" height="600" src="images/team/salman.jpeg" alt="Ihsan">
+                                <div class="overlay">
+                                    <ul class="social">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                    </ul>
+                                </div> <!-- /.overlay -->
+                            </div>
+                            <div class="inner-content">
+                                <h5>Mr. Salman Inayat
+                                </h5>
+                                <span>React Developer
+                                </span>
+                                <p>Creative React Developer with 2 years of experience building robust websites. Knowledgeable of best practices followed in the development of a software system.
+                                </p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div>
+
+                </div>
+
                 </div> <!-- /.our-team -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -340,7 +457,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <p>Copyright &copy; 2021 Internet of Things Lab (IoT), NUST-SEECS</p>
+                    <p>Copyright &copy; 2021 IoT Lab, NUST-SEECS</p>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="go-top">
