@@ -286,6 +286,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
+/* Change Color of text */
+#services .service-description {  
+  color: black;
+}
 
 /*------------------------------------------------------
 	Portfolio Styles 
@@ -440,6 +444,15 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+#about .our-team .team-member .inner-content p {
+  color: black;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#about p {
+  color: black;
+}
 /*------------------------------------------------------
 	Contact Styles 
 --------------------------------------------------------*/
@@ -459,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 #contact .contact-form label {
   display: block;
   margin-bottom: 5px;
+  color: black;
 }
 #contact .contact-form input.mainBtn {
   display: inline-block;
@@ -479,6 +493,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   display: block;
   font-size: 14px;
+  color: black;
 }
 #contact .contact-info span i {
   color: #004879;
