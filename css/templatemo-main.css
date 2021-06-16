@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-header .menu ul li a {
   text-transform: uppercase;
-  color: #777777;
+  color: black;
   font-size: 15px;
   padding: 8px 15px;
   -webkit-border-radius: 3px;
@@ -573,6 +573,46 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer .go-top i {
   display: block;
 }
+
+
+/*****************************
+Header dropdown
+*****************************/
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #004879;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #004879;}
+
 
 /********************************
 IPAD LANDSCAPE (1024x768)
