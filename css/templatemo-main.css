@@ -223,6 +223,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #444444;
 }
 
+/* .responsive-menu .menu ul li a .selected {
+  background-color: #444444;
+} */
+
 /*------------------------------------------------------
 	Basic Layout Styles 
 --------------------------------------------------------*/
@@ -581,6 +585,7 @@ Header dropdown
 .dropbtn {
   background-color: white;
   color: black;
+  
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -607,12 +612,18 @@ Header dropdown
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #004879;}
+.dropdown-content a:hover {background-color: #004879; color: white !important;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #004879;}
+.dropdown:hover .dropbtn {background-color: #004879; color: white;}
 
+
+/********************************
+See More See less Tag
+********************************/
+
+#more {display: none;}
 
 /********************************
 IPAD LANDSCAPE (1024x768)

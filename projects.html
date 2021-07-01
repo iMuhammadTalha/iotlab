@@ -79,7 +79,11 @@
   border-top: none;
 }
 
+.more {display: none;}
+
     </style>
+
+<script src="js/script.js"></script>
 </head>
 <body>
     
@@ -111,13 +115,13 @@
                 <div class="container">
                     
                     <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-6">
+                        <div class="col-md-1 col-sm-1 col-xs-6">
                             <div class="logo">
                                 <!-- <h1><a href="index.html" title="Dreri">Internet of Things Lab</a></h1> -->
-                                <a href="index.html" title="Dreri"><img src="images/orange.png" height="60px" alt=""></a>
+                                <a href="index.html" title="Dreri"><img src="images/lab-icon.png" height="60px" alt=""></a>
                             </div> <!-- /.logo -->
                         </div> <!-- /.col-md-4 -->
-                        <div class="col-md-10 col-sm-10 col-xs-6">
+                        <div class="col-md-11 col-sm-11 col-xs-6">
                             <div class="menu text-right hidden-sm hidden-xs">
         
                                 <ul>
@@ -134,7 +138,7 @@
                                     </li>
     
                                     <!-- <li><a href="#portfolio">TEAM</a></li> -->
-                                    <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
+                                    <li><a onclick="location.href='projects.html'" href="#about">Projects</a></li>
                                     <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
                                     <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
                                     <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
@@ -163,7 +167,7 @@
                                 </li>
     
                                 <!-- <li><a href="#portfolio">TEAM</a></li> -->
-                                <li><a onclick="location.href='projects.html'" href="projects.html">Projects</a></li>
+                                <li><a onclick="location.href='projects.html'" href="#about">Projects</a></li>
                                 <li><a onclick="location.href='publications.html'" href="publications.html">Publications</a></li>
                                 <!-- <li><a onclick="location.href='achievements.html'" href="achievements.html">ACHIEVEMENT</a></li> -->
                                 <li><a onclick="location.href='achievements-award.html'" href="achievements-award.html">Awards</a></li>
@@ -179,9 +183,6 @@
         </div> <!-- /.site-header -->
     </div> <!-- /#home -->
 
-    
-    <div class="Project">
-    </div>
     
 
     
@@ -208,8 +209,15 @@
                     <div class="col-md-8">
                         <h4 class="widget-title">Wheat Rust Disease Detection and Classification using An Ensemble Approach integrating IoT, Edge Computing, and Deep Learning  
                             </h4>
-                        <p>Wheat leaf rust is one of the widespread fungal diseases which can cause a severe drop in wheat production and a major threat to food security in Pakistan where wheat covers almost 40% of the cultivated land. The detection of wheat rust can be possible through the naked eye, but this method is unsuccessful and time-consuming when we have to monitor the large farming lands. Towards such ends, there is a need to develop a system that can detect wheat rust and classify its severity accurately in the early and subsequent stages in real-time by exploiting technologies such as edge computing, IoT, and deep learning. For this purpose, a camera will take the high-resolution picture of the wheat leaf, the image will be processed using edge computing by locally running the deep learning algorithm and the result will be sent to the web portal and mobile app using communication technologies such as wifi or GSM. This would not only help to arrest the problem in real-time but also helps us to enhance the yield of the crop.
+                        <p>Wheat leaf rust is one of the widespread fungal diseases which can cause a severe drop in wheat production and a major threat to food security in Pakistan where wheat covers almost 40% of the cultivated land. The detection of wheat rust can be possible through the naked eye, but this method is unsuccessful and time-consuming when we have to monitor the large farming lands. Towards such ends, there is a need to develop a system that can detect wheat rust and classify its severity accurately in the early and subsequent stages in real-time by exploiting technologies such as edge computing, IoT, and deep learning. 
+                            
+                        <span class="dots">...</span>
+                        <span class="more">
+                            For this purpose, a camera will take the high-resolution picture of the wheat leaf, the image will be processed using edge computing by locally running the deep learning algorithm and the result will be sent to the web portal and mobile app using communication technologies such as wifi or GSM. This would not only help to arrest the problem in real-time but also helps us to enhance the yield of the crop.
+                        </span>
+                        <a class="read">read more</a>
                         </p>
+                        
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
@@ -225,13 +233,18 @@
                     <div class="col-md-8">
                         <h4 class="widget-title">Time-series Analysis and Prediction of Water Quality through Remote Sensing, GIS and IoT
                                                 </h4>
-                        <p>The periodic time series analysis of different aspects of urban areas is essential owing to an increase in population, stressed resources, and lack of technology-based solutions for effective resource management. In this regard, the temporal analysis of water quality holds paramount importance as it is a key ingredient to sustain life on earth. Water quality depends on many factors like precipitation, climate, soil type, vegetation, geology, flow conditions, groundwater, PH level, etc. For this purpose, the remote sensing data from satellites (Sentinel and Landsat), Geographic Information System (GIS) data, and IoT data will be collected to perform water quality trend analysis. The subject area for this study will preferably be the Rawal dam. The analysis will be performed on the data of the last ten years and predictive analytic will be performed to project the water quality for the near future. This analysis would help us to identify various factors (such as increased air pollution, weather conditions) that are contributing to polluting the surface water and how remedial measures can be put in place to mitigate the decreasing water quality. The time series analysis & visualization and predictive analytic service will be developed on a web portal.
+                        <p>The periodic time series analysis of different aspects of urban areas is essential owing to an increase in population, stressed resources, and lack of technology-based solutions for effective resource management. In this regard, the temporal analysis of water quality holds paramount importance as it is a key ingredient to sustain life on earth. Water quality depends on many factors like precipitation, climate, soil type, vegetation, geology, flow conditions, groundwater, PH level, etc. For this purpose, the remote sensing data from satellites (Sentinel and Landsat), Geographic Information System (GIS) data, and IoT data will be collected to perform water quality trend analysis. 
+                            <span class="dots">...</span>
+                            <span class="more">
+                                The subject area for this study will preferably be the Rawal dam. The analysis will be performed on the data of the last ten years and predictive analytic will be performed to project the water quality for the near future. This analysis would help us to identify various factors (such as increased air pollution, weather conditions) that are contributing to polluting the surface water and how remedial measures can be put in place to mitigate the decreasing water quality. The time series analysis & visualization and predictive analytic service will be developed on a web portal.
+                            </span>
+                            <a class="read">read more</a>
                         </p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
                         <h4 class="widget-title"></h4>
                         <ul class="progess-bars">
-                            <img src="images/projects/time.png" alt="Portfolio Item 3">
+                            <img src="images/projects/time2.png" alt="Portfolio Item 3">
                         </ul>
                     </div> <!-- /.col-md-3 -->
                 </div> <!-- /.row -->
@@ -242,7 +255,12 @@
                     <div class="col-md-8">
                         <h4 class="widget-title">Enhanced Water Quality Monitoring and Estimation by Exploiting Multi-modal Approach
                         </h4>
-                        <p>With the advent of new technologies such as the Internet of Things (IoT), the water quality can be measured and reported in real-time. However, the limitation of this approach is that it provides point data which is insufficient to represent the entire water body quality unless the water samples are collected from a large number of points and for long durations. The collection of data from multiple points in a water body is not feasible particularly if the data collection sites are difficult to access due to complex terrain or other resources. In contrast to this approach, the data collected from remotely sensed satellite imagery provide ample details about the entire water body, however, the data acquisition is constrained by satellite revisit time and the quality of estimates is effected by image resolution. In addition to this, the GIS data collected from labs can be useful for providing higher resolution and accurate data and can be used as a ground truth. However, the lab measurements are done manually which consume a substantial amount of time and creates a delay for data synthesis and assimilation. In view of the above, we proposed an enhanced water quality monitoring and estimation system that integrates the above approaches to overcome the limitations of these existing methods. The study area of this research work will preferably be Rawal Dam. The monitoring and estimation of water quality will be based on machine learning models applied on the ensemble data acquired from satellite imagery, GIS, and IoT nodes. The web service for providing the enhanced water quality estimates will be made and the water quality parameters extracted from multiple data sources will be archived on the web portal. For improved visualization and analysis basic and advanced data analytic features will be added on the web portal.  In order to visualize the water quality of the water body, heat maps will be generated, where the color codes will classify the level of water quality.
+                        <p>With the advent of new technologies such as the Internet of Things (IoT), the water quality can be measured and reported in real-time. However, the limitation of this approach is that it provides point data which is insufficient to represent the entire water body quality unless the water samples are collected from a large number of points and for long durations. The collection of data from multiple points in a water body is not feasible particularly if the data collection sites are difficult to access due to complex terrain or other resources. 
+                            <span class="dots">...</span>
+                            <span class="more">
+                                In contrast to this approach, the data collected from remotely sensed satellite imagery provide ample details about the entire water body, however, the data acquisition is constrained by satellite revisit time and the quality of estimates is effected by image resolution. In addition to this, the GIS data collected from labs can be useful for providing higher resolution and accurate data and can be used as a ground truth. However, the lab measurements are done manually which consume a substantial amount of time and creates a delay for data synthesis and assimilation. In view of the above, we proposed an enhanced water quality monitoring and estimation system that integrates the above approaches to overcome the limitations of these existing methods. The study area of this research work will preferably be Rawal Dam. The monitoring and estimation of water quality will be based on machine learning models applied on the ensemble data acquired from satellite imagery, GIS, and IoT nodes. The web service for providing the enhanced water quality estimates will be made and the water quality parameters extracted from multiple data sources will be archived on the web portal. For improved visualization and analysis basic and advanced data analytic features will be added on the web portal.  In order to visualize the water quality of the water body, heat maps will be generated, where the color codes will classify the level of water quality.
+                            </span>
+                            <a class="read">read more</a>
                         </p>
                     </div> 
                     <div class="col-md-4 our-skills">
@@ -337,7 +355,7 @@
                     <div class="col-md-8">
                         <h4 class="widget-title">Surface Water Pollution Monitoring Using IoT for Predictive Healthcare
                                                 </h4>
-                        <p>An IoT based water quality monitoring solution that monitors water quality parameters such as pH level, turbidity, temperature, conductivity, and dissolved oxygen in real-time. The system generates the Water Quality Index (WQI) map of the region of interest. The system performs classification as well as bacteria prediction using machine learning algorithms. A web portal is developed to archive the collected data and perform basic and advanced data analytics. Video link
+                        <p>An IoT based water quality monitoring solution that monitors water quality parameters such as pH level, turbidity, temperature, conductivity, and dissolved oxygen in real-time. The system generates the Water Quality Index (WQI) map of the region of interest. The system performs classification as well as bacteria prediction using machine learning algorithms. A web portal is developed to archive the collected data and perform basic and advanced data analytics.
                         </p>
                     </div> <!-- /.col-md-3 -->
                     <div class="col-md-4 our-skills">
@@ -444,5 +462,22 @@
     document.getElementById("defaultOpen").click();
     </script>
 
+<!-- <script>
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+    
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more"; 
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less"; 
+        moreText1.style.display = "inline";
+      }
+    }
+    </script> -->
 </body>
 </html>
